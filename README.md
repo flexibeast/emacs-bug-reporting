@@ -8,7 +8,7 @@ i'm not an Emacs dev myself, but i do follow the bug-gnu-emacs list, and have do
 
     * Try running Emacs with the `--debug-init` option. That might quickly help pinpoint the specific line causing issues.
 
-    * If that doesn't help, you'll need to bisect your configuration file. Remove half of it, and see if you still get the error; if you do, the error is probably in the remaining half, and if you don't, then the error is in the removed half. Then repeat the process with the relevant halves.
+    * If that doesn't help, you'll need to bisect your configuration file. Remove or comment out half of it, and check if the problem is still present; if it is, the problem is probably in the remaining half, and if you don't, the problem is probably in the removed or commented-out half. Then repeat the process with the relevant halves.
 
   * If the problem continues to present, even when not loading your personal configuration, then a package you've installed might be the problem. Unless it's a package you've installed from GNU ELPA, you need to report the issue to the maintainer(s) of that package, not via `report-emacs-bug`. Note, too, that issues with Org should be first reported to the Org maintainers, even though Org is part of Emacs. If you've installed the package from GNU ELPA, then that package is considered part of Emacs, and the issue can be reported via `report-emacs-bug`.
 
