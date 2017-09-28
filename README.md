@@ -1,3 +1,5 @@
+# A brief guide to reporting bugs in GNU Emacs
+
 i'm not an Emacs dev myself, but i do follow the bug-gnu-emacs list, and have done so for a while now. Based on my observations, i'd like to suggest some things to keep in mind when you `M-x report-emacs-bug`:
 
 * To begin, narrow down where the problem is, or might be. Does the problem appear when you run Emacs with the `-Q` option? If not, then the cause of the problem is likely to be either in your configuration, or in a package you've installed:
