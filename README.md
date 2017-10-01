@@ -1,6 +1,7 @@
 # A brief guide to reporting bugs in GNU Emacs
 
 i'm not an Emacs dev myself, but i do follow the bug-gnu-emacs list, and have done so for a while now. Based on my observations, i'd like to suggest some things to keep in mind when you `M-x report-emacs-bug`:
+i'm not an Emacs dev myself, but i do follow the bug-gnu-emacs list, and have done so for a while now. Based on my observations, i'd like to suggest some things to keep in mind when you `M-x report-emacs-bug`. Ideally, you should carefully read [the "Reporting bugs" chapter of the GNU Emacs manual](https://www.gnu.org/software/emacs/manual/html_node/emacs/Bugs.html#Bugs)[1]; a lot of thought and work has gone into it, to assist people in creating high-quality bug reports that are more likely to be helpful to Emacs devs. However, the following summarises some of the key points:
 
 * To begin, narrow down where the problem is, or might be. Does the problem appear when you run Emacs with the `-Q` option? If not, then the cause of the problem is likely to be either in your configuration, or in a package you've installed:
 
@@ -32,4 +33,6 @@ Otherwise, if you can reproduce the problem when running Emacs with the `-Q` opt
 
 -----
 
-[1] Or, indeed, are you using the version that comes pre-installed with macOS, which was current around the time the first iPhone was released?
+[1] Which can also be accessed from within Emacs itself either by selecting the "How to Report a Bug" entry from the "Help" menu, or by doing <kbd>C-h r m bugs <RET></kbd>.
+
+[2] Or, indeed, are you using the version that comes pre-installed with macOS, which was current around the time the first iPhone was released?
