@@ -10,7 +10,7 @@ i'm not an Emacs dev myself, but i do follow the bug-gnu-emacs list, and have do
 
     * If that doesn't help, you'll need to bisect your configuration file. Remove or comment out half of it, and check if the problem is still present; if it is, the problem is probably in the remaining half, and if you don't, the problem is probably in the removed or commented-out half. Then repeat the process with the relevant halves.
 
-  * If the problem continues to present, even when not loading your personal configuration, then a package you've installed might be the problem. Unless it's a package you've installed from GNU ELPA, you need to report the issue to the maintainer(s) of that package, not via `report-emacs-bug`. Note, too, that issues with Org should be first reported to the Org maintainers, even though Org is part of Emacs. If you've installed the package from GNU ELPA, then that package is considered part of Emacs, and the issue can be reported via `report-emacs-bug`.
+    * The bisection process might narrow down the issue as being something to do with a package you've installed. Unless it's a package you've installed from GNU ELPA, you need to report the issue to the maintainer(s) of that package, not via `report-emacs-bug`. Note, too, that issues with Org should be first reported to the Org maintainers, even though Org is part of Emacs. If you've installed the package from GNU ELPA, then that package is considered part of Emacs, and the issue can be reported via `report-emacs-bug`.
 
 Otherwise, if you can reproduce the problem when running Emacs with the `-Q` option, you can report it via `report-emacs-bug`.
 
