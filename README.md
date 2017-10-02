@@ -32,11 +32,11 @@ Assuming there's no existing report of the issue on the bug tracker, you can now
 
   * A *minimal example* to reproduce the problem. The more effort you require someone to go to in order to reproduce your bug, the more difficult it makes things for them, the more difficult it is to narrow down the issue, and the less likely the problem will be solved. So this:
 
-  "You need to install Bazinga Linux 2005. Then run this script to fetch data from this Web site. Then install my 5000-line `init.el`. Then load up this 10M file into Emacs. Then do `M-x a-useful-command`. See the problem?"
+      "You need to install Bazinga Linux 2005. Then run this script to fetch data from this Web site. Then install my 5000-line `init.el`. Then load up this 10M file into Emacs. Then do `M-x a-useful-command`. See the problem?"
 
-  is .... not helpful. Especially compared to e.g. this:
+    is .... not helpful. Especially compared to e.g. this:
 
-  "Run Emacs -Q. Evaluate `(setq a-variable "value")`. Type 'wtf', press space, then do `M-x a-useful-command`. I expected 'wtf' to get capitalised in this context, but instead it always gets replaced with 'doh'."
+      "Run Emacs -Q. Evaluate `(setq a-variable "value")`. Type 'wtf', press space, then do `M-x a-useful-command`. I expected 'wtf' to get capitalised in this context, but instead it always gets replaced with 'doh'."
 
 * Note that your report should be *entirely self-contained* - all the essential information should be within your report, and links to Web sites should only be provided to e.g. provide some background information, demonstrate that other people are facing the same or similar problems, etc.
 
