@@ -12,7 +12,15 @@ i'm not an Emacs dev myself, but i do follow the bug-gnu-emacs list, and have do
 
     * The bisection process might narrow down the issue as being something to do with a package you've installed. Unless it's a package you've installed from GNU ELPA, you need to report the issue to the maintainer(s) of that package, not via `report-emacs-bug`. Note, too, that issues with Org should be first reported to the Org maintainers, even though Org is part of Emacs. If you've installed the package from GNU ELPA, then that package is considered part of Emacs, and the issue can be reported via `report-emacs-bug`.
 
-Otherwise, if you can reproduce the problem when running Emacs with the `-Q` option, you can report it via `report-emacs-bug`.
+* If you can reproduce the problem when running Emacs with the `-Q` option:
+
+  * If possible, try to check if the problem still occurs in a more recent version of Emacs, if one exists:
+
+    * The most recent source release is available [here](https://www.gnu.org/software/emacs/). A binary package might have been released for your specific operating system; check in the location from which you last downloaded Emacs.
+
+    * For those running a development version of Emacs, make sure you're at the latest commit on `master`, then run `make bootstrap`, which removes all existing compiled files and forces a new bootstrap from a clean slate.
+
+Still experiencing the issue even in the most recent release, or at the most recent commit? Now's the time to report it via `report-emacs-bug`:
 
 * Regardless of where you send the report, it should include the following information:
 
