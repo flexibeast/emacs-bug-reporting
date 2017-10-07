@@ -40,6 +40,15 @@ Assuming there's no existing report of the issue on the bug tracker, you can now
 
 * Note that your report should be *entirely self-contained* - all the essential information should be within your report, and links to Web sites should only be provided to e.g. provide some background information, demonstrate that other people are facing the same or similar problems, etc.
 
+* After you have entered the necessary informations, make sure the From address is your mail address. If not change it to appropriate mail id.
+
+* Hit C-c C-c to send the mail.
+
+* At the prompts, choose SMTP and then enter smtp.gmail.com and press ENTER.
+
+* Enter username and password. Say yes to save password to ~/.authinfo authentication file.
+
+
 -----
 
 [1] Which can also be accessed from within Emacs itself either by selecting the "How to Report a Bug" entry from the "Help" menu, or by doing <kbd>C-h r m bugs <RET></kbd>.
